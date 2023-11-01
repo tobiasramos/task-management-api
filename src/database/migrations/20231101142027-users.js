@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    return queryInterface.createTable("user", {
+    return queryInterface.createTable("users", {
       id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -20,7 +20,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      repeatPassword: {
+      repeat_password: {
         type: Sequelize.STRING,
         allowNull: false,
       },
