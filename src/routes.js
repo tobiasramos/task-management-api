@@ -7,6 +7,7 @@ routes.get("/", (req, res) => {
   res.send("Servidor rodando");
 });
 
+routes.post("/login", UserController.loginUser);
 routes.post("/register", UserController.registerUser);
 
 routes.get("/task", TaskController.index);
